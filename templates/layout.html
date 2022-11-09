@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <head>
+            <meta name ="viewport" content="with=device-width, initial-scale=1.0">
+            <title>WestSide Corporation</title>
+            <link rel="stylesheet" href="/static/style1.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+            </head>
+	</head>
+	<body class="loggedin">	
+            <section class="header">
+                <nav>
+                    <a href="index.html"><img src="/static/logo.png" height="80px" width="134px" margin="left"></a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="{{ url_for('home') }}">Home</a></li>
+                            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                            <li><a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                            <li><p style="color: white;">Welcome, {{ username }}!</p></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </nav>
+
+
+    <div class="text-box">
+        <h1>Brought To You By Apoorva</h1>
+        <p>Software Services and IT Consulation at one click!</p>
+        <a href="" class="hero-btn">Surf To Know More</a>
+    </div>
+
+            </section>
+
+    <!--What we offer-->
+
+    <section class="offer">
+        <h1>What This Site Offer</h1>
+        <section class="offer_p">
+            <p>We offer a clear path to understand and solve problems related to IT as well as provide multiple Software Services.</p>
+        </section>
+        
+
+        <div class="row">
+            <div class="offer-col">
+                <h3>Software Services</h3>
+                <p>Software Services means services that Customer provides to you that make available, display, run, access, or otherwise interact, directly or indirectly, with the Products..</p>
+            </div>
+            <div class="offer-col">
+                <h3>IT Consultation</h3>
+                <p>IT consulting services are advisory services that help clients assess different technology strategies and, in doing so, align their technology strategies with their business or process strategies.</p>
+            </div>
+            <div class="offer-col">
+                <h3>Other B2B Services</h3>
+                <p>B2B (business-to-business), a type of electronic commerce (e-commerce), is the exchange of products, services or information between businesses. A B2B transaction is conducted between two companies, such as wholesalers and online retailers.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--What we are-->
+
+    <section class="location">
+        <h1>What Technology We Prefer</h1>
+        <p>In general, we are of diverse nature. So, no technology if fixed for our use. But, we tend to focus on the following technologies as our primary technologies.</p>
+
+        <div class="row">
+            <div class="location-col">
+                <img src="/static/python.jpg">
+                <div class="layer">
+                    <h3>PYTHON PROGRAMMING</h3>
+                </div>
+            </div>
+
+            <div class="location-col">
+                <img src="/static/C.jpg">
+                <div class="layer">
+                    <h3>C/C++ PROGRAMMING</h3>
+                </div>
+            </div>
+
+            <div class="location-col">
+                <img src="/static/sql.jpg">
+                <div class="layer">
+                    <h3>MY SQL </h3>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!--love-->
+
+    <section class="love">
+        <h1>What We Love</h1>
+        <p>We Love Everything. No Room For Hate!</p>
+
+        <div class="row">
+            <div class="love-col">
+                <img src="/static/gaming.jpg">
+                <h3>Gaming</h3>
+                <p>We mostly love to play FIFA. Career Mode in general. Afte FIFA, there's this new first-person hero shooter game VALORANT which is pretty cool.</p>
+            </div>
+        
+            <div class="love-col">
+                <img src="/static/coding.jpg">
+                <h3>Coding</h3>
+                <p>We love to code. Our primary language is C/C++ and sometimes we like to code in Python. We are trying to learn Databases and some front-endd languages like HTML and CSS.</p>
+            </div>      
+        
+            <div class="love-col">
+                <img src="/static/reading.jpg">
+                <h3>Reading</h3>
+                <p>In general, we like to read novels typically of genre crime, thriller and sci-fi. We have read a lot of novels by Dan Brown and some of Chetan Bhagat.</p>
+            </div>       
+        </div>
+    
+    </section>
+
+    <!--Review-->
+
+    <section class="review">
+        <h1>Our Viewers Feedback</h1>
+        <p>Our Viewers Valuable Words</p>
+
+        <div class="row">
+            <div class="review-col">
+                <img src="/static/u1.png">
+                <div>
+                    <p>I know nothing but that's one good site for software solutions.</p>
+                    <h3>Jon Snow</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    
+                </div>
+            </div>
+            
+            <div class="review-col">
+                <img src="/static/tuco.jpg">
+                <div>
+                    <p>They helped me lot in building my complete empire around the world.</p>
+                    
+                    <h3>Tuco Salamanca</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--action-->
+
+    <section class="action">
+        <h1>Acess Our Services From Anywhere</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+
+    <!--footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Currently, I am a final year student who is completing his Undergrad in Computer Science & Engineering from Babu Banarasi Das Engineering College Lucknow, India. This website is designed as fullfillment of the Technical Task of the XenonStack.</p>
+        <div class="icons">
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>Made With <i class="fa fa-heart"></i> by Apoorva Mishra</p>
+    </section>
+            
+<!--JScript for menu--> 
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+    </body>
+</html>
+
+	</body>
+</html>
